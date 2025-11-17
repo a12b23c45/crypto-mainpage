@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Rocket, Link as LinkIcon, BarChart3, User, Shield, History } from "lucide-react";
+import { Link as LinkIcon, BarChart3, User, Shield, History } from "lucide-react";
 import cryptoHero from "@/assets/crypto-hero.jpg";
 import tokenIcon from "@/assets/token-icon.jpg";
 import blockchainNetwork from "@/assets/blockchain-network.jpg";
@@ -20,13 +20,16 @@ const Index = () => {
           />
         </div>
         <div className="relative max-w-7xl mx-auto">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary shadow-lg shadow-primary/50">
+          <div className="flex items-center gap-4 mb-3">
+            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary shadow-lg shadow-primary/50">
               <img src={tokenIcon} alt="Token" className="w-full h-full object-cover" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold title-shine">ERC-20 Token & Crowdsale Demo</h1>
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold title-shine">CryptoLaunch</h1>
+              <p className="text-primary/80 text-lg md:text-xl font-semibold">Token Distribution Platform</p>
+            </div>
           </div>
-          <p className="text-muted-foreground text-sm md:text-base ml-15">Assignment Simulation - Localhost</p>
+          <p className="text-muted-foreground text-sm md:text-base ml-20">Blockchain-Powered Crowdsale Solution</p>
         </div>
       </header>
 
