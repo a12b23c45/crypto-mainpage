@@ -8,13 +8,13 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-gradient-to-r from-info to-cyan-400 text-white py-6 px-4 shadow-lg">
+      <header className="bg-gradient-to-r from-background to-card text-foreground py-8 px-4 shadow-2xl border-b-2 border-primary/20">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-3 mb-2">
-            <Rocket className="w-8 h-8" />
-            <h1 className="text-3xl font-bold">ERC-20 Token & Crowdsale Demo</h1>
+            <Rocket className="w-10 h-10 text-primary" />
+            <h1 className="text-4xl font-bold title-shine">ERC-20 Token & Crowdsale Demo</h1>
           </div>
-          <p className="text-white/90 text-sm ml-11">Assignment Simulation - Localhost</p>
+          <p className="text-muted-foreground text-sm ml-13">Assignment Simulation - Localhost</p>
         </div>
       </header>
 
@@ -89,7 +89,7 @@ const Index = () => {
         </Card>
 
         {/* User Actions */}
-        <Card className="border-2 bg-gradient-to-br from-cyan-50/50 to-blue-50/50">
+        <Card className="border-2 bg-gradient-to-br from-card to-background">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-foreground">
               <User className="w-5 h-5" />
@@ -169,7 +169,7 @@ const Index = () => {
         </Card>
 
         {/* Admin Actions */}
-        <Card className="border-2 bg-gradient-to-br from-yellow-50/50 to-amber-50/50">
+        <Card className="border-2 bg-gradient-to-br from-card to-background">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-foreground">
               <Shield className="w-5 h-5" />
